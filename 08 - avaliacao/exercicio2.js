@@ -18,6 +18,7 @@
 const {gets, print} = require('./funcoes-auxiliares-ex2');
 
 function main () {
+    console.clear();
 let maiorValor = 0;
 let menorValor = 10;
 
@@ -25,7 +26,7 @@ print("Sequência Fornecida: ");
 for (let i = 0 ;i <= 5; i++) {
 
     valorEntrada = gets();
-    print(valorEntrada);
+    print("[" + i + "]: " + valorEntrada);
 
     if ( valorEntrada % 2 == 0) {
         if(valorEntrada > maiorValor) {
